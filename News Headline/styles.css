@@ -1,0 +1,67 @@
+/* Resetting margins, padding, and setting box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensuring the entire page takes up the full viewport height */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif; /* Setting a clean, sans-serif font */
+}
+
+/* Centering the content on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Light gray background for contrast */
+}
+
+/* Main container for the headline board */
+.headline-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E01423; /* Bold red background for the board */
+    border: 20px solid #f4f4f4; /* Thick light gray border */
+    padding: 20px;
+    width: 80%;
+    max-width: 400px; /* Limiting width for better responsiveness */
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Styling the image within the board */
+.headline-image {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 60%; /* Limit image height */
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+/* Styling the text section */
+.headline-text {
+    background-color: black; /* Black background for strong contrast */
+    border: 5px solid #f4f4f4; /* Light gray border around the text */
+    flex-grow: 1; /* Allow the text section to grow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px; /* Padding inside the text area */
+}
+
+/* Styling the headline title */
+.headline-title {
+    color: #f4f4f4; /* Light gray text color */
+    font-size: 75px; /* Large font size for prominence */
+    text-align: center;
+    margin: 0; /* Removing default margins */
+    padding: 10px; /* Padding around the text */
+    overflow: hidden; /* Hide overflow if text is too long */
+    word-wrap: break-word; /* Allow breaking of long words */
+}
